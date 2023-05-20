@@ -18,7 +18,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://dailydoseoflaughter.vercel.app/` + encodeURI(path as string)
+					`https://comicsconnoisseurs.com/graphql` + encodeURI(path as string)
 				}`,
 			},
 		};
