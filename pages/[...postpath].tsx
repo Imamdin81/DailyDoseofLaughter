@@ -18,7 +18,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://comicsconnoisseurs.com/graphql` + encodeURI(path as string)
+					endpoint.replace(/(\/graphql\/)/, '/') + encodeURI(path as string)
 				}`,
 			},
 		};
